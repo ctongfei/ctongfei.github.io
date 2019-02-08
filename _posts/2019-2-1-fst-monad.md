@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Abstractions of FSTs with Monads
+comments: true
 ---
 
 
@@ -12,7 +13,7 @@ Finite state machines (FSTs) are usually formulated as a tuple $$ (S, A, B, s_0,
   - $$ S^F \subseteq S $$: The set of final states;
   - $$ \delta \subseteq (S \times A) \times (S \times B) $$: The transition relation.
 
-We translate this to Scala:
+We encode this in Scala:
 
 ```scala
 trait Transducer[-A, +B] {
@@ -31,14 +32,19 @@ From a functional programming perspective, FSTs form a category here!
 
 ```scala
 implicit object TransducerCategory extends Category[Transducer] {
+
   def id[A]: Transducer[Id, Id] = 
     new Transducer[Id, Id] {
       type S = Unit
       def initialStates = Set(())
       def finalStates = Set(())
       def next(s: S, a: A): Set((s, a))
-  }
-  def compose[A, B, C](t2: Transducer[B, C], t1: Transducer[A, B]):Transducer[A, C] =
+    }
+  
+  def compose[A, B, C](
+                       t2: Transducer[B, C], 
+                       t1: Transducer[A, B]
+                      ): Transducer[A, C] =
     new Transducer[A, C] {
       type S = (t1.S, t2.S)
       def initialStates = for {
@@ -60,7 +66,9 @@ implicit object TransducerCategory extends Category[Transducer] {
 }
 ```
 
-The `Set[(S, B)]` encoding is not ideal: what if each output is assigned a weight (weighted FSTs)? What if the output given a specific state and input form a distribution (stochastic FSTs)? It turns out that we can encode this elegantly with __monads__:
+However, the output encoding of the `next` function, `Set[(S, B)]` is not ideal: what if each output is assigned a weight (weighted FSTs)? What if the output given a specific state and input form a distribution (stochastic FSTs)? 
+
+Note that the `next` function in `compose` is implemented elegantly through a _monadic_ comprehension. Let's abstract this __monad__ out:
 
 ```scala
 trait Transducer[F[_], -A, +B] {
@@ -70,10 +78,45 @@ trait Transducer[F[_], -A, +B] {
     def next(s: S, a: A): F[(S, B)]
 }
 ```
-The `F[_]` higher-kinded type encapsulates the _effect_ of moving the transducer state to another given an input! `F[_]` could be 
+We call this `F`-transducer: the `F` higher-kinded type encapsulates the __effect__ of moving the transducer state to another given an input! `F` could be 
   - `Id`: Deterministic FSTs;
+  - `Option`: Determinstic FSTs with some edges lead to failure case;
   - `Set`: Non-deterministic FSTs;
   - `Stochastic`: Stochastic FSTs;
   - `Weighted`: Weighted FSTs.
 
-We'll see later how should the `Weighted` monad be formed. 
+Let's take the weighted case as an example, since weighted FSTs (WFSTs) are of utmost importance in a variety of domains, e.g. automatic speech recognition.
+
+\\[
+  W = \\{ (a, r) \\}; a \in A, r \in R
+\\]
+```scala
+  type Weighted[A, R] = Map[A, R]
+```
+
+`Weighted` form a monad given a semiring $$(R, \mathbb{0}, \mathbb{1}, \oplus, \odot)$$ on the weight type `R`:
+\\[
+\begin{align}
+  \textrm{pure}(a) &= \left\\{ (a, \mathbb{1}) \right\\} \\\\\\\\
+  \textrm{map}(W, f) &= \left\\{ (f(a), r) \mid (a, r) \in W \right\\} \\\\\\\\
+  \textrm{flatMap}(W, f) &= \left\\{ \left(b, \bigoplus_{(a,r)\in W} \bigoplus_{(b, r^\prime) \in f(a)} r \odot r^\prime \right) \middle| b \in B \right\\}
+\end{align}
+\\]
+```scala
+implicit def WeightedMonad(implicit R: Semiring[R]) 
+  extends Monad[Weighted[_, R]] { 
+    // let's pretend Scala has type lambda syntax here
+  def pure[A](a: A) = Map((a, R.one))
+  def map[A, B](wa: Map[A, R])(f: A => B) = 
+    wa.map { case (a, r) => (f(a), r) }.toMap
+  def flatMap[A, B](wa: Map[A, R])(f: A => Map[B, R]) = 
+    (
+      for {
+        (a, r0) <- wa
+        (b, r1) <- f(a)
+      } yield (b, R.times(r0, r1))
+    ).groupBy {
+      case (b, r) => b
+    }.mapValues 
+}
+```

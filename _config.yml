@@ -7,7 +7,7 @@ logo_url:           "assets/logo.jpg" # Get it from GitHub API: https://api.gith
 # Site Settings
 url:                https://tongfei.me # main url
 baseurl:            ""
-permalink:          /:title # Post permalink
+permalink:          /:title.html # Post permalink
 mathjax:            true  # enables support for mathjax - set to 'false' to disable
 
 # Site Build

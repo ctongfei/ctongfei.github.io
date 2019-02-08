@@ -13,7 +13,7 @@ body {
   line-height: 24px;
   font-weight: normal;
   font-style: normal;
-  font-family: 'Source Sans Pro', Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: 'Source Sans Pro', sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   color: #333333;
   padding: 20px;
   margin: 0;
@@ -179,8 +179,8 @@ pre,
   font-family: "Source Code Pro", monospace;
 }
 code {
-  color: #f14e32;
-  background: #eee;
+  color: #914e82;
+  background: #f3f3f3;
   padding: 2px 6px;
   font-size: 13px;
 }
@@ -192,8 +192,8 @@ pre {
   line-height: 1.4;
   white-space: pre;
   overflow-x: auto;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
+  background-color: #fbfbfb;
+  border: 1px solid #eee;
   padding: 1rem;
   code {
     font-size: 100%;
@@ -352,6 +352,7 @@ section {
       }
       .post-date {
         float: right;
+        font-size: 90%;
         margin: 0 0 0 20px;
       }
       span {
