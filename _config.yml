@@ -1,13 +1,13 @@
 # Site Info
 title:              ""
 description:        "Musings"
-author_name:        "" # change this to your name
+author_name:        "Tongfei Chen" # change this to your name
 logo_url:           "assets/logo.jpg" # Get it from GitHub API: https://api.github.com/users/<username>
 
 # Site Settings
 url:                https://tongfei.me # main url
 baseurl:            ""
-permalink:          /:title.html # Post permalink
+permalink:          /:title # Post permalink
 mathjax:            true  # enables support for mathjax - set to 'false' to disable
 
 # Site Build
