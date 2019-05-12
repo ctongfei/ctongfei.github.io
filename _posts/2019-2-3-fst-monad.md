@@ -5,7 +5,7 @@ comments: true
 ---
 
 
-Finite state machines (FSTs) are usually formulated as a tuple $$ (S, A, B, s_0, S_F, \delta) $$ comprising of the following components:
+Finite state machines (FSTs) are usually formulated as a tuple $$ (S, A, B, S^I, S^F, \delta) $$ comprising of the following components:
   - $$ S $$: The set of __states__;
   - $$ A $$: The __input__ alphabet;
   - $$ B $$: The __output__ alphabet;
