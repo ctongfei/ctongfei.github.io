@@ -1,0 +1,218 @@
+{
+    "publications": {
+        "ChenCD20H": {
+            "title": "Joint modeling of arguments for event understanding",
+            "authors": ["Yunmo Chen", "Tongfei Chen", "Benjamin Van Durme"],
+            "venue": "CODI@EMNLP20",
+            "kind": "workshop",
+            "tags": ["nlp"]
+        },
+        "ChenCEWD20": {
+            "title": "Reading the Manual: Event understanding as definition comprehension",
+            "authors": ["Yunmo Chen", "Tongfei Chen", "Seth Ebner", "Aaron Steven White", "Benjamin Van Durme"],
+            "venue": "SPNLP@EMNLP20",
+            "arxiv-paper": "https://arxiv.org/abs/1912.01586",
+            "kind": "workshop",
+            "tags": ["nlp"]
+        },
+        "ChenJPSD20": {
+            "title": "Uncertain natural language inference",
+            "authors": ["Tongfei Chen*", "Zhengping Jiang*", "Adam Poliak", "Keisuke Sakaguchi", "Benjamin Van Durme"],
+            "venue": "ACL20",
+            "pages": [8772, 8779],
+            "official-paper": "https://www.aclweb.org/anthology/2020.acl-main.774/",
+            "arxiv-paper": "https://arxiv.org/abs/1909.03042",
+            "kind": "conference",
+            "tags": ["nlp"]
+        },
+        "ChenCD20": {
+            "title": "Hierarchical entity typing via multi-level learning to rank",
+            "authors": ["Tongfei Chen", "Yunmo Chen", "Benjamin Van Durme"],
+            "venue": "ACL20",
+            "pages": [8465, 8475],
+            "official-paper": "https://www.aclweb.org/anthology/2020.acl-main.749/",
+            "arxiv-paper": "https://arxiv.org/abs/2004.02286",
+            "kind": "conference",
+            "tags": ["nlp"]
+        },
+        "WangCXDL19": {
+            "title": "Espresso: A fast end-to-end neural speech recognition toolkit",
+            "authors": ["Yiming Wang", "Tongfei Chen", "Hainan Xu", "Shuoyang Ding", "Hang Lv", "Yiwen Shao", "Nanyun Peng", "Lei Xie", "Shinji Watanabe", "Sanjeev Khudanpur"],
+            "venue": "ASRU19",
+            "pages": [136, 143],
+            "official-paper": "https://ieeexplore.ieee.org/document/9003968",
+            "arxiv-paper": "https://arxiv.org/abs/1909.08723",
+            "code": "https://github.com/freewym/espresso",
+            "kind": "conference",
+            "tags": ["speech"]
+        },
+        "McCarthyCE19": {
+            "title": "An exact No Free Lunch theorem for community detection",
+            "authors": ["Arya D. McCarthy", "Tongfei Chen", "Seth Ebner"],
+            "venue": "COMPLEXNETWORKS19",
+            "pages": [176, 187],
+            "official-paper": "https://link.springer.com/chapter/10.1007%2F978-3-030-36687-2_15",
+            "arxiv-paper": "https://arxiv.org/abs/1903.10092",
+            "kind": "conference",
+            "tags": ["graph"]
+        },
+        "McCarthyCRM19": {
+            "title": "Metrics matter in community detection",
+            "authors": ["Arya D. McCarthy", "Tongfei Chen", "Rachel Rudinger", "David W. Matula"],
+            "venue": "COMPLEXNETWORKS19",
+            "pages": [164, 175],
+            "official-paper": "https://link.springer.com/chapter/10.1007%2F978-3-030-36687-2_14",
+            "arxiv-paper": "https://arxiv.org/abs/1901.01354",
+            "kind": "conference",
+            "tags": ["graph"]
+        },
+        "ChenNHRM19": {
+            "title": "Improving long distance slot carryover in spoken dialogue systems",
+            "authors": ["Tongfei Chen", "Chetan Naik", "Hua He", "Pushpendre Rastogi", "Lambert Mathias"],
+            "venue": "NLP4ConvAI@ACL19",
+            "pages": [96, 105],
+            "award": "best paper award",
+            "official-paper": "https://www.aclweb.org/anthology/W19-4111/",
+            "arxiv-paper": "https://arxiv.org/abs/1906.01149",
+            "kind": "workshop",
+            "tags": ["nlp"]
+        },
+        "LiCD19": {
+            "title": "Learning rank for plausible plausibility",
+            "authors": ["Zhongyang Li", "Tongfei Chen", "Benjamin Van Durme"],
+            "venue": "ACL19",
+            "pages": [4818, 4823],
+            "official-paper": "https://www.aclweb.org/anthology/P19-1475/",
+            "arxiv-paper": "https://arxiv.org/abs/1906.02079",
+            "kind": "conference",
+            "tags": ["nlp"]
+        },
+        "RastogiGCM19": {
+            "title": "Scaling multi-domain dialogue state tracking via query reformulation",
+            "authors": ["Pushpendre Rastogi", "Arpit Gupta", "Tongfei Chen", "Lambert Mathias"],
+            "venue": "NAACL19-industry",
+            "pages": [97, 105],
+            "official-paper": "https://www.aclweb.org/anthology/N19-2013/",
+            "arxiv-paper": "https://arxiv.org/abs/1903.05164",
+            "data": "https://github.com/alexa/alexa-dataset-contextual-query-rewrite",
+            "blog": "https://developer.amazon.com/blogs/alexa/post/ddad5b81-a557-423c-aae4-c55c6715f4cf/teaching-alexa-to-follow-conversations",
+            "kind": "conference",
+            "tags": ["nlp"]
+        },
+        "HuKCXC19": {
+            "title": "Improved lexically-constrained decoding for translation and monolingual rewriting",
+            "authors": ["J. Edward Hu", "Huda Khayrallah", "Ryan Culkin", "Patrick Xia", "Tongfei Chen", "Matt Post", "Benjamin Van Durme"],
+            "venue": "NAACL19",
+            "pages": [839, 850],
+            "official-paper": "https://www.aclweb.org/anthology/N19-1090",
+            "poster": null,
+            "kind": "conference",
+            "tags": ["nlp"]
+        },
+        "WangFCLC19": {
+            "title": "End-to-end anchored speech recognition",
+            "authors": ["Yiming Wang", "Xing Fan", "I-Fan Chen", "Yuzong Liu", "Tongfei Chen", "Björn Hoffmeister"],
+            "venue": "ICASSP19",
+            "pages": [7090, 7094],
+            "official-paper": "https://ieeexplore.ieee.org/document/8682866",
+            "arxiv-paper": "https://arxiv.org/abs/1902.02383",
+            "poster": null,
+            "kind": "conference",
+            "tags": ["speech"]
+        },
+        "ChenNIS19": {
+            "title": "Confidence scoring using whitebox meta-models with linear classifier probes",
+            "authors": ["Tongfei Chen", "Jiří Navrátil", "Vijay Iyengar", "Karthikeyan Shanmugam"],
+            "venue": "AISTATS19",
+            "pages": [1467, 1475],
+            "official-paper": "http://proceedings.mlr.press/v89/chen19c.html",
+            "arxiv-paper": "https://arxiv.org/abs/1805.05396",
+            "poster": null,
+            "kind": "conference",
+            "tags": ["ml"]
+        },
+        "ChenECXS19": {
+            "title": "NIST TAC SM-KBP 2019 system description: JHU/UR framework",
+            "authors": ["Yunmo Chen", "Seth Ebner", "Tongfei Chen", "Patrick Xia", "Elias Stengel-Eskin", "J. Edward Hu", "Nils Holzenberger", "Ryan Culkin", "Craig Harman", "Max Thomas", "Aaron Steven White", "Kyle Rawlins", "Benjamin Van Durme"],
+            "venue": "TAC19",
+            "official-paper": "https://tac.nist.gov/publications/2019/participant.papers/TAC2019.Decomp_JH_UR.proceedings.pdf",
+            "kind": "system-description",
+            "tags": ["nlp"]
+        },
+        "ZhangBYRY19": {
+            "title": "LoReHLT19 system description UMD-JHU",
+            "authors": ["Mozhi Zhang", "Jordan Boyd-Graber", "Michelle Yuan", "C. Anton Rytting", "Weiwei Yang", "Philip Resnik", "Ting Hua", "Adam Poliak", "Adam Teichert", "Tongfei Chen", "Xu Han", "Linghao Jin", "João Sedoc", "Benjamin Van Durme"],
+            "venue": null,
+            "kind": "system-description",
+            "tags": ["nlp"]
+        },
+        "XiaSCEH18": {
+            "title": "NIST TAC SM-KBP 2018 system description: JHU/UR pipeline",
+            "authors": ["Patrick Xia", "Elias Stengel-Eskin", "Tongfei Chen", "Seth Ebner", "Nils Holzenberger", "Ryan Culkin", "Pushpendre Rastogi", "Xutai Ma", "Benjamin Van Durme"],
+            "venue": "TAC18",
+            "official-paper": "https://tac.nist.gov/publications/2018/participant.papers/TAC2018.Decomp_JH_UR.proceedings.pdf",
+            "kind": "system-description",
+            "tags": ["nlp"]
+        },
+         "SankepallyCDO18": {
+            "title": "A test collection for coreferent mention retrieval",
+            "authors": ["Rashmi Sankepally", "Tongfei Chen", "Benjamin Van Durme", "Douglas W. Oard"],
+            "venue": "SIGIR18",
+            "pages": [1209, 1212],
+            "official-paper": "https://dl.acm.org/citation.cfm?id=3210139",
+            "data": "https://github.com/hltcoe/CoreferentMentionRetrieval",
+            "poster": null,
+            "kind": "conference",
+            "tags": ["nlp"]
+        },
+        "XuCGWL18": {
+            "title": "A pruned RNNLM lattice-rescoring algorithm for automatic speech recognition",
+            "authors": ["Hainan Xu", "Tongfei Chen", "Dongji Gao", "Yiming Wang", "Ke Li", "Nagendra Goel", "Yishay Carmiel", "Daniel Povey", "Sanjeev Khudanpur"],
+            "venue": "ICASSP18",
+            "pages": [5929, 5933],
+            "official-paper": "https://ieeexplore.ieee.org/document/8461974",
+            "poster": null,
+            "kind": "conference",
+            "tags": ["nlp"],
+        },
+        "VanDurmeLDBP17": {
+            "title": "Cadet: Computer Assisted Discovery Extraction and Translation",
+            "authors": ["Benjamin Van Durme", "Tom Lippincott", "Kevin Duh", "Deana Burchfield", "Adam Poliak", "Cash Costello", "Tim Finin", "Scott Miller", "James Mayfield", "Philipp Koehn", "Craig Harman", "Dawn Laurie", "Chandler May", "Max Thomas", "Annabelle Carrell", "Julianne Chaloux", "Tongfei Chen", "Alex Comerford", "Mark Dredze", "Benjamin Glass", "Shudong Hao", "Patrick Martin", "Pushpendre Rastogi", "Rashmi Sankepally", "Travis Wolfe", "Ying-Ying Tran", "Ted Zhang"],
+            "venue": "IJCNLP17-demo",
+            "pages": [5, 8],
+            "official-paper": "http://www.aclweb.org/anthology/I/I17/I17-3002.pdf",
+            "demo": null,
+            "kind": "system-description",
+            "tags": ["nlp"]
+        },
+        "Chen17": {
+            "title": "Typesafe abstractions for tensor operations",
+            "authors": ["Tongfei Chen"],
+            "venue": "Scala@SPLASH17",
+            "pages": [45, 50],
+            "official-paper": "https://dl.acm.org/citation.cfm?id=3136001",
+            "arxiv-paper": "https://arxiv.org/abs/1710.06892",
+            "slides": null,
+            "video": "https://www.youtube.com/watch?v=Sn3HP_cb3ts",
+            "code": "https://github.com/ctongfei/nexus"
+        },
+        "ChenD17": {
+            "title": "Discriminative information retrieval for question answering sentence selection",
+            "authors": ["Tongfei Chen", "Benjamin Van Durme"],
+            "venue": "EACL17-2",
+            "pages": [719, 725],
+            "official-paper": "http://www.aclweb.org/anthology/E/E17/E17-2114.pdf",
+            "poster": null,
+            "code": "https://github.com/ctongfei/probe",
+            "data": "https://www.cs.jhu.edu/~tongfei/assets/17eacl-cv-supplementary-data.zip"
+        }
+    },
+
+    "venues": {
+        "ACL20": {
+            "year": 2020,
+            "booktitle": "Proceedings of the Annual Conference of the Association of Computational Linguistics",
+            "location": "Florence, Italy"
+        }
+    }
+}
