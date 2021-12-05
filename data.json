@@ -1,6 +1,21 @@
 {
     "publications": {
-        "ChenCD20H": {
+        "GaoDCFD21": {
+            "title": "Complementing lexical retrieval with semantic residual embedding",
+            "authors": ["Luyu Gao", "Zhuyun Dai", "Tongfei Chen", "Zhen Fan", "Benjamin Van Durme", "Jamie Callan"],
+            "venue": "ECIR21",
+            "arxiv-paper": "https://arxiv.org/abs/2101.12175",
+            "kind": "conference",
+            "tags": ["ir", "nlp"]
+        },
+        "XiaQVCC21": {
+            "title": "LOME: Large ontology multilingual extraction",
+            "authors": ["Patrick Xia*", "Guanghui Qin*", "Siddharth Vashishtha", "Yunmo Chen", "Tongfei Chen", "Chandler May", "Craig Harman", "Kyle Rawlins", "Aaron Steven White", "Benjamin Van Durme"],
+            "venue": "EACL21-demo",
+            "kind": "conference",
+            "tags": ["nlp"]
+        },
+        "ChenCD20b": {
             "title": "Joint modeling of arguments for event understanding",
             "authors": ["Yunmo Chen", "Tongfei Chen", "Benjamin Van Durme"],
             "venue": "CODI@EMNLP20",
